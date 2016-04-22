@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hometimes</title>
+</head>
+<body>
+  <h1>Hometimes</h1>
+<button ng-click="gettodo()">get todo</button>
 
+  <input type="text" ng-model="inputModel">
+  <button><submit ng-click="pushtodo(inputModel)">Submit</submit></button>
+  <ul>
+    <li ng-repeat="thing in thingstodo" ng-click="read(thing)"><button ng-click="delete($index)">delete</button>{{thing}}</li>
+  </ul>
+</body>
+</html>
 
 {{message}}
+{{books}}
+{{pages}}

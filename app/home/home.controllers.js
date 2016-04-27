@@ -29,6 +29,11 @@ angular.module('app')
         $scope.delete=function(index){
           $scope.thingstodo.splice(index,1);
           $scope.keeptodo();
-        }
+        };
+
+        $scope.edit=function(index){
+          $scope.thingstodo[index]=$scope.inputModel;
+          $scope.keeptodo();
+        };
 
 });
